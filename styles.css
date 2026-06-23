@@ -1,0 +1,433 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html body {
+  font-size: 16px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "raleway", sans-serif;
+  /* max-width: 1500px; */
+}
+
+/*NAV*/
+.barra-superior {
+  height: 64px;
+  background-color: #6a1b9a;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 24px 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar__logo img {
+  height: 50px;
+}
+
+.navbar__menu ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__menu a {
+  text-decoration: none;
+  font-family: "raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+.navbar__menu a:hover {
+  color: #6a1b9a; /* morado de tu sitio */
+}
+
+/*Seccion 1*/
+.seccion-hero {
+  position: relative;
+  overflow: hidden;
+  background-image: url("imagenes/images/seguridad-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 40px;
+  color: black;
+  background-color: black;
+}
+
+/* .seccion-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay oscuro */
+
+.seccion-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0) 10%,
+    rgba(0, 0, 0, 0.85) 75%
+  );
+  z-index: 1;
+}
+
+.hero-overlay {
+  margin-left: 3rem;
+}
+.hero-overlay h2 {
+  position: relative;
+  z-index: 2;
+  font-size: 2.6rem;
+  letter-spacing: 0.25rem;
+  color: #e0e0e0;
+  margin-bottom: 0.5rem;
+}
+
+.hero-overlay h1 {
+  position: relative;
+  z-index: 2;
+  font-size: 6rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: white;
+}
+
+/*
+#100146
+#f4f1e8
+#6402b1
+#be3aff
+
+*/
+
+/*Seccion 2*/
+.seccion-info {
+  background-color: #100146;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.seccion-info h2 {
+  font-size: 42px;
+  font-family: "raleway", sans-serif;
+  color: #be3aff;
+  margin-bottom: 8px;
+}
+
+.subtitulo {
+  color: #f4f1e8;
+  margin-bottom: 30px;
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-family: "raleway", sans-serif;
+  font-weight: 100;
+}
+
+.bloque {
+  background-color: #6402b1;
+  color: #f4f1e8;
+  padding: 15px;
+  margin: 25px auto;
+  max-width: 700px;
+  border-radius: 16px;
+  text-align: left;
+  /* display: flex;
+  align-items: space-between; */
+}
+
+.bloque.oscuro {
+  background-color: #100146;
+  margin-right: 200px;
+}
+
+.bloque.claro {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.numero {
+  background-color: #be3aff;
+  color: #1a0042;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 10px 15px;
+  position: relative;
+  top: 27px;
+  left: 18px;
+
+  font-size: 18px;
+  font-family: "raleway", sans-serif;
+}
+
+.bloque__texto {
+  margin-left: 75px;
+  color: #f4f1e8;
+  font-weight: 100;
+  padding-bottom: 15px;
+  padding-right: 37px;
+}
+
+.bloque.claro .numero {
+  background-color: #6200ea;
+  color: #f4f1e8;
+}
+
+.bloque.claro table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+.bloque.claro thead th {
+  text-align: center;
+  padding: 10px;
+
+  color: #333;
+  font-weight: 600;
+}
+
+.bloque.claro tr th:nth-child(-n + 2) {
+  border-right: 1px solid #be3aff;
+}
+
+.bloque.claro tbody td {
+  padding: 10px;
+  border-top: 1px solid #be3aff;
+}
+
+.bloque.claro tbody td:nth-child(-n + 2) {
+  border-right: 1px solid #be3aff;
+}
+
+.bloque.claro a {
+  color: #6200ea;
+  text-decoration: none;
+}
+
+/*Seccion 3*/
+.herramientas-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  gap: 40px;
+}
+
+.herramientas-imagen {
+  width: 16rem;
+}
+
+ul.herramientas-lista-verificacion li::marker {
+  color: #be3aff;
+}
+
+.herramientas-lista-verificacion {
+  display: flex;
+  gap: 35px;
+  margin: 20px 100px;
+  padding-bottom: 100px;
+}
+
+.herramientas-lista-verificacion li:nth-child(-n + 3) {
+  border-right: 3px solid #be3aff;
+}
+
+/*Seccion 4* Bloque de errores*/
+
+.seccion-consejos {
+  background-color: #100146;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bloque-errores {
+  background-color: #be3aff;
+  color: #f4f1e8;
+  padding: 50px 20px;
+  text-align: center;
+  max-width: 1000px;
+  border-radius: 16px;
+  margin-bottom: 50px;
+  position: relative;
+  top: -35px;
+}
+
+.consejos-imagen {
+  width: 25rem;
+  margin: 0 auto;
+}
+
+.bloque-consejos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  color: #f4f1e8;
+  margin: 3.12rem 3.12rem;
+}
+
+.consejos-texto {
+  flex: 0.5;
+}
+
+.consejos-titulo {
+  font-size: 1.5rem;
+  font-family: "raleway", sans-serif;
+  color: #f4f1e8;
+  margin-bottom: 10px;
+}
+
+.consejos-titulo {
+  font-size: 2.62rem;
+  font-family: "raleway", sans-serif;
+  color: #be3aff;
+  margin-bottom: 0px;
+}
+
+.consejos-subtitulo {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "raleway", sans-serif;
+  color: #f4f1e8;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #be3aff;
+}
+/***************************/
+/* Sección 5 - VPN */
+
+.seccion-vpn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 50px 20px;
+  background-color: #f4f1e8;
+}
+
+.vpn-titulo {
+  font-size: 2.62rem;
+  font-family: "raleway", sans-serif;
+  color: #be3aff;
+  margin-bottom: 0px;
+}
+
+.vpn-subtitulo {
+  font-size: 1.5rem;
+  font-family: "raleway", sans-serif;
+}
+
+.vpn-subtitulo-inline {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "raleway", sans-serif;
+
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #be3aff;
+}
+
+.vpn-tabla {
+  padding: 1rem;
+  margin: 1.5rem auto;
+  border-radius: 1rem;
+  background-color: #100146;
+  text-align: center;
+}
+.vpn-tabla table {
+  background-color: #100146;
+  color: #f4f1e8;
+  border-radius: 0.5rem;
+  border-collapse: collapse;
+}
+
+.vpn-tabla th {
+  text-align: center;
+  color: #be3aff;
+  font-weight: 600;
+  margin-top: 1rem;
+  padding: 10px;
+}
+
+.vpn-tabla td {
+  padding: 10px;
+  border-top: 1px solid #be3aff;
+}
+.vpn-tabla td:nth-child(-n + 1) {
+  border-right: 1px solid #be3aff;
+}
+
+.vpn-tabla tr th:nth-child(-n + 1) {
+  border-right: 1px solid #be3aff;
+}
+
+/* Sección 6 - Dispositivos separados */
+
+.seccion-dispositivos-separados {
+  background-color: #100146;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 3rem 1.5rem;
+}
+
+.dispositivos-separados-texto {
+  flex: 0.5;
+  color: #f4f1e8;
+}
+
+.dispositivos-separados-titulo {
+  font-size: 2.62rem;
+  font-family: "raleway", sans-serif;
+  color: #be3aff;
+  margin-bottom: 0px;
+}
+
+.dispositivos-separados-subtitulo {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "raleway", sans-serif;
+  color: #f4f1e8;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #be3aff;
+}
+
+.dispositivos-separados-descripcion {
+  font-size: 1.2rem;
+  font-family: "raleway", sans-serif;
+  color: #f4f1e8;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.dispositivos-separados-imagen {
+  width: 20rem;
+}

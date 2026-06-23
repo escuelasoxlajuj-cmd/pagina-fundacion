@@ -1,0 +1,93 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+*.tmp
+*.temp
+*.log
+*.swp
+*.swo
+*~
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.atom/
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+*.min.js
+*.min.css
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Compressed files
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# Cache directories
+.cache/
+.tmp/
+.temp/
+
+# Images
+images/
+assets/images/
+uploads/
+imagenes/
+imagenes/images/
+*.zip
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.svg
+*.webp
+*.ico
+documentos/
+
+#pdf
+*.pdf
+
+# videos
+*.mp4
+
+#documentos
+images/*.jpg
+images/*.jpeg
+assets/images/*.jpg
+assets/images/*.jpeg
+uploads/*.jpg
+uploads/*.jpeg
+imagenes/*.jpg
+imagenes/*.jpeg
+documentos/*.jpg
+documentos/*.jpeg
