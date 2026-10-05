@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donar</title>
-    <link rel="icon" href="https://oxlajujstorage.blob.core.windows.net/oxlajujweb/Logoprincipal.jpg" type="image/png"/>
-    <Link rel="stylesheet" href="Oxlajuj_Noj_Style.css">
+    <link rel="icon" href="imagenes/Logoprincipal.jpg" type="image/png"/>
+    <link rel="stylesheet" href="Oxlajuj_Noj_Style.css">
+    <link rel="stylesheet" href="donar.css">
     <link rel="stylesheet" href="queries.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <script src="script.js" defer></script>
+        
 
 </head>
 <body class="body">
@@ -28,7 +30,7 @@
         <div class="horizontal-menu">
       <div class="ajuste-Logo1">
         <img
-          src="https://oxlajujstorage.blob.core.windows.net/oxlajujweb/Logo2.png"
+          src="imagenes/Logo2.png"
           width="200px"
           alt="Logo de la fundación en simbolo y letras Oxlajuj Noj"
         />
@@ -77,85 +79,344 @@
           <li class="cuerpo_lista">
             <a class="a-menu2" href="Contacto.html">Contacto</a>
           </li>
+          <li class="cuerpo_lista selector-idioma">
+            <div class="gtranslate_wrapper"></div>
+          </li>
         </ul>
       </div>
     </div>
 
-<main class="main_donar">
+<!-- HERO -->
+<section class="hero">
 
-    <div class="fondo_donar">
-        <a class="a_donar2" href="https://docs.google.com/forms/d/e/1FAIpQLSdHmy-N2DSSUJCzGDsKBuR9lcjmLBpxcS8uW9AadL0wmGZBNw/viewform?usp=sharing"> Donar por PAYPAL </a>
+  <div class="hero-content">
+    <p class="eyebrow">Dona para transformar</p>
+
+    <h1>Tu apoyo transforma vidas y fortalece comunidades</h1>
+
+    <p>
+      En Fundación Oxlajuj N'oj impulsamos la educación, el liderazgo,
+      la inclusión digital y espacios seguros para mujeres y juventudes.
+    </p>
+
+    <div class="hero-actions">
+      <a
+        href="documentos/Cartelera de Proyectos 2026.pdf"
+        class="btn-outline"
+      >
+        Conocer nuestro impacto
+      </a>
+
+      <a href="#beneficios" class="btn-outline">
+        Beneficios de donar
+      </a>
+
+      <a href="#donar" class="btn-outline">
+        Dona aquí
+      </a>
+    </div>
+  </div>
+
+
+  <!-- CARRUSEL -->
+  <div class="hero-carousel">
+
+    <div class="carousel-slide active">
+      <img
+        src="imagenes/donar.jpeg"
+        alt="Mujeres y jóvenes participando en una actividad"
+      />
     </div>
 
-    <div class="fondo_donar2">
-        <nav>
-        <div class="donar_titulo">
-            INFORMACIÓN PARA TRANSACCIONES INTERNACIONALES
-        </div>
-
-        <div class="infodonar_ajuste">
-
-            <div>
-                <nav class="donar_borde">
-                    NOMBRE DEL BANCO: BANRURAL 
-                </nav>
-                <nav class="donar_borde">
-                    TIPO DE CUENTA: MONETARIA
-                </nav>
-
-                <nav class="donar_borde">
-                    Código Swift: BRRLGTGC 
-                </nav>
-            </div>
-
-            <div>
-                <nav class="donar_borde">
-                    NOMBRE DE LA CUENTA: FUNDACION OXLAJUJ N´OJ 
-                </nav>
-                <nav class="donar_borde">
-                    NÚMERO DE CUENTA: 3033663283
-                </nav>
-                <nav class="donar_borde">
-                    Código IBAN: GT83 BRRL 0101 0000 0030 3366 3283
-                </nav>
-            </div>
-
-        </div>
-
-
-            <div class="cuerpo_logos">
-        <div class="Pos_logos">
-            <div class="Logos_cuadro">
-                <div class="Logo_ajuste">
-                    <img src="https://oxlajujstorage.blob.core.windows.net/oxlajujweb/Logo_Paypal.png" alt="Logo">
-                </div>
-                <div class="Logo_ajuste">
-                    <img src="https://oxlajujstorage.blob.core.windows.net/oxlajujweb/Logo_banrural.png" alt="Logo2">
-                </div>
-            </div>
-        </div>
+    <div class="carousel-slide">
+      <img
+        src="imagenes/donar22.jpg"
+        alt="Actividad de Fundación Oxlajuj N'oj"
+      />
     </div>
+
+    <div class="carousel-slide">
+      <img
+        src="imagenes/donar3.jpg"
+        alt="Participantes de actividades de Fundación Oxlajuj N'oj"
+      />
+    </div>
+     <div class="carousel-slide">
+      <img
+        src="imagenes/donar4.jpeg"
+        alt="Participantes de actividades de Fundación Oxlajuj N'oj"
+      />
+    </div>
+     <div class="carousel-slide">
+      <img
+        src="imagenes/donar5.jpeg"
+        alt="Participantes de actividades de Fundación Oxlajuj N'oj"
+      />
+    </div>
+
+
+    <!-- Botón anterior -->
+    <button
+      class="carousel-button carousel-prev"
+      aria-label="Imagen anterior"
+    >
+      &#10094;
+    </button>
+
+    <!-- Botón siguiente -->
+    <button
+      class="carousel-button carousel-next"
+      aria-label="Imagen siguiente"
+    >
+      &#10095;
+    </button>
+
+
+    <!-- PUNTOS -->
+    <div class="carousel-dots">
+
+      <button class="carousel-dot active" data-slide="0"></button>
+
+      <button class="carousel-dot" data-slide="1"></button>
+
+      <button class="carousel-dot" data-slide="2"></button>
+
+    </div>
+
+  </div>
+
+</section>
+
+    <!-- Beneficios de donar -->
+    <section class="porque-donar" id="por-que-donar">
+      <div class="section-title">
+        <span></span>
+        <h2>¿Por qué donar?</h2>
+        <span></span>
+      </div>
+
+      <div class="cards-grid">
+
+        <article class="info-card">
+          <div class="icon purple">⚖️</div>
+          <h3>Equidad de género</h3>
+          <p>Trabajamos para cerrar brechas y eliminar la violencia basada en género.</p>
+        </article>
+
+        <article class="info-card">
+          <div class="icon teal">👥</div>
+          <h3>Derechos humanos</h3>
+          <p>Ponemos la dignidad y los derechos de las personas en el centro de toda acción</p>
+        </article>
+
+        <article class="info-card">
+          <div class="icon gold">🌱</div>
+          <h3>Justicia Climática</h3>
+          <p>Promovemos acciones frente a los impactos ambientales, defendiendo el derecho a un entorno sano y sostenible
+</p>
+        </article>
+        <article class="info-card">
+          <div class="icon gold">💜</div>
+          <h3>Relaciones saludables</h3>
+          <p>Promovemos acciones frente a los impactos ambientales, defendiendo el derecho a un entorno sano y sostenible
+</p>
+        </article>
+         <article class="info-card">
+          <div class="icon gold">🌟</div>
+          <h3>Juventudes</h3>
+          <p>Fortalecemos la participación, el liderazgo y las oportunidades para las juventudes
+</p>
+        </article>
+         <article class="info-card">
+          <div class="icon gold">📈</div>
+          <h3>Empoderamiento económico</h3>
+          <p>Fortalecemos capacidades para impulsar la autonomía y las oportunidades económicas.
+</p>
+        </article>
+
+      </div>
+    </section>
+
+    </section>
+
+    
+
+    <!-- IMPACTO -->
+    <section class="impact" id="impacto">
+
+      <div class="impact-item">
+        <span></span>
+        <strong>5032</strong>
+        <p>Personas beneficiadas en proyectos presencial</p>
+      </div>
+
+      <div class="impact-item">
+        <span></span>
+        <strong>2124</strong>
+        <p>personas impactadas de forma virtual</p>
+      </div>
+
+      <div class="impact-item">
+        <span></span>
+        <strong>5</strong>
+        <p>Incidencia en departamentos</p>
+      </div>
+
+      <div class="impact-item">
+        <span></span>
+        <strong>15</strong>
+        <p>Participación en mesas y redes de incidencia</p>
+      </div>
+
+    </section>
+
+    
+
+      </div>
+    </section>
+
+    <!-- DONACIÓN -->
+    <!-- DONACIÓN -->
+<section class="donation-section" id="donar">
+
+  <div class="section-title">
+    <span></span>
+    <h2>¿Cómo hacer una donación?</h2>
+    <span></span>
+  </div>
+
+  <!-- CONTENEDOR DE LAS TARJETAS -->
+  <div class="donation-types">
+
+    <!-- DONACIÓN NACIONAL -->
+    <article class="info-card">
+       <img
+    src="imagenes/Nuevo_Logo_Banrural.png"
+    alt="Logo de GoFundMe"
+    class="gofundme-logo"
+    width="250px"
+  />
+      <h3>Donación Nacional</h3>
+
+      <p><strong>Nombre del banco:</strong> Banrural</p>
+
+      <p>
+        <strong>Nombre de la cuenta:</strong>
+        Fundación Oxlajuj N'oj
+      </p>
+
+      <p>
+        <strong>Tipo de cuenta:</strong>
+        Monetaria
+      </p>
+
+      <p>
+        <strong>Número de cuenta:</strong>
+        3033663283
+      </p>
+    </article>
+
+
+    <!-- DONACIÓN INTERNACIONAL -->
+    <article class="info-card">
+<img
+    src="imagenes/paypal.jpg"
+    alt="Logo de GoFundMe"
+    class="gofundme-logo"
+   width="250px"
+  />
+      <h3>Donación Internacional</h3>
+
+<a
+        href="https://www.paypal.com/paypalme/13noj?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGn8JpTQD9VL3t7_qEm5mR_kqQYNRHVd9N7iI2z6A6oZKlSB9O4OjxELnWtmNw_aem_ayKwogry3EDO4x3h2jxBMw"
+        target="_blank"
+        class="donation-link"
+      >
+        Ir a PayPal
+      </a>
+      <p>
+        <strong>Código Swift:</strong>
+        BRRLGTCGC
+      </p>
+
+      <p>
+        <strong>Código IBAN:</strong>
+        GT83 BRRL 0101 0000 0030 3366 3283
+      </p>
+    </article>
+
+
+    <!-- GOFUNDME -->
+    <article class="info-card donation-link-card">
+ <img
+    src="imagenes/gofundme.png"
+    alt="Logo de GoFundMe"
+    class="gofundme-logo"
+    width="250px" 
+  />
+      <h3>GoFundMe</h3>
+
+      <p>
+        Apoya nuestros proyectos a través de nuestra campaña.
+      </p>
+
+      <a
+        href="https://www.gofundme.com/f/education-safety-and-dignity-for-rural-girls-and-youth?utm_campaign=fp_sharesheet&utm_content=amp20_t1&utm_medium=customer&utm_source=copy_link&lang=en_GB&attribution_id=sl%3Aae5c79f3-46f0-4f71-bc39-082561af17de&ts=1781818220"
+        target="_blank"
+        class="donation-link"
+      >
+        Ir a GoFundMe
+      </a>
+
+    </article>
+
+
+    <!-- COMPROBANTE -->
+    <article class="info-card donation-link-card">
+
+      <h3>Comprobante de donación</h3>
+<div class="icon purple">📝</div>
+      <p>
+        Completa el formulario para solicitar tu comprobante.
+      </p>
+
+      <a
+  href="https://forms.gle/Hpk8DE976YvycnwS6"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="donation-link"
+>
+  Llenar formulario
+</a>
+      </a>
+
+    </article>
+
+  </div>
+
+</section>
+  <script>
+      window.gtranslateSettings = {
+        default_language: "es",
+        native_language_names: true,
+        languages: ["es", "en"],
+        wrapper_selector: ".gtranslate_wrapper",
+        flag_size: 24,
+        switcher_horizontal_position: "inline",
+        alt_flags: {
+          en: "usa",
+        },
+      };
+    </script>
+    <script
+      src="https://cdn.gtranslate.net/widgets/latest/dropdown.js"
+      defer
+    ></script>
 
 </main>
 
 
         <a href="https://wa.me/50236127669?text=Hola%20me%20interesa%20más%20información" class="whatsapp-button" target="_blank">
-            <img src="https://oxlajujstorage.blob.core.windows.net/oxlajujweb/Logo_whatsapp.png" alt="WhatsApp">
+            <img src="imagenes/Logo_whatsapp.png" alt="WhatsApp">
         </a>
 
-<footer class="footer">
-    <div>
-        <img src="https://oxlajujstorage.blob.core.windows.net/oxlajujweb/LOGO_OXLAJU_BLANCO.png" height="70px" alt="logo oficial de la fundació">
-    </div>
-    <div>
-        <p>Ciudad de Guatemala</p>
-        <p>tel:(+502) 41285119</p>
-        <p>fundacionoxlajujnoj@gmail.com</p>
-    </div>
-    <div>
-        <a href="https://www.facebook.com/FundacionOxlajujnoj"> <img class="footer_logo" src="https://oxlajujstorage.blob.core.windows.net/oxlajujweb/Logo_fb2.png"> </a>
-        <a href="https://www.instagram.com/fundacionoxlajujnoj?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> <img class="footer_logo" src="https://oxlajujstorage.blob.core.windows.net/oxlajujweb/Logo_ig2.png" alt=""> </a>
-        <a href="https://www.tiktok.com/@fundacinoxlajujno?is_from_webapp=1&sender_device=pc"> <img class="footer_logo" src="https://oxlajujstorage.blob.core.windows.net/oxlajujweb/Logo_tt2.png" alt=""> </a>
-        <a href=""> <img class="footer_logo" src="https://oxlajujstorage.blob.core.windows.net/oxlajujweb/Logo_yt2.png" alt=""> </a>
-    </div>
-</footer>
